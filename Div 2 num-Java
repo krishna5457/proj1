@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class DivisionProgram {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input first number
+        System.out.print("Enter the first number: ");
+        double num1 = scanner.nextDouble();
+
+        // Input second number
+        System.out.print("Enter the second number: ");
+        double num2 = scanner.nextDouble();
+
+        // Check if the second number is not zero (division by zero is undefined)
+        if (num2 != 0) {
+            // Perform division and display the result
+            double result = num1 / num2;
+            System.out.println("Result of division: " + result);
+        } else {
+            // Handle division by zero
+            System.out.println("Error: Division by zero is undefined. Please enter a non-zero second number.");
+        }
+
+        // Close the scanner
+        scanner.close();
+    }
+}
